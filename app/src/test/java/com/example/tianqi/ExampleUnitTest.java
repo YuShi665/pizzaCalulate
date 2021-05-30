@@ -28,6 +28,7 @@ public class ExampleUnitTest {
 
     @Test
     public void test1(){
+        //no topping
         CalculateCost.cost(null,"large");
         CalculateCost.cost(null,"extraLarge");
         CalculateCost.cost(null,"medium");
@@ -46,16 +47,9 @@ public class ExampleUnitTest {
         list.add(temp2);
         list.add(temp3);
         list.add(null);
-        System.out.println(CalculateCost.cost(list,"large"));
+        //System.out.println(CalculateCost.cost(list,"large"));
     }
-    @Test
-    public void test3(){
-        Topping temp = new Topping("name1",0.00);
-        if(0.00==0){
-            System.out.println("ss");
-        }
-        //assertEquals(0.00, 0);
-    }
+
     @Test
     public void test4(){
         Topping temp = new Topping("T1",2);

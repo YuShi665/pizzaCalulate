@@ -42,16 +42,18 @@ public class CalculateCost {
                     found = true;
                     // System.out.println( pizzaPrice[count-1]);
                     totalCost+=pizzaPrice[count-1];
+                    money = ""+totalCost;
                 }
             }
             if(!found){
-                money = "?";
-                System.out.println("没找到这个size");
+                money = "??";
+               // System.out.println("size");
             }
         }
 
 
         if((elements!=null) && (elements.size())>0 && found){
+
             for(Iterator<Topping> it = elements.iterator();it.hasNext();){
                 element = it.next();
                 if(!(element instanceof Topping)){
@@ -88,7 +90,7 @@ public class CalculateCost {
                 //System.out.println(missTopping);
             }
         }
-        if(((validTopping+missTopping)==elements.size())&&validTopping>0){
+        if(elements!=null&&((validTopping+missTopping)==elements.size())&&validTopping>0){
             money = ""+totalCost;
         }
         return money;
