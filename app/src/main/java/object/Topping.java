@@ -2,18 +2,23 @@ package object;
 
 public class Topping {
     private String toppingName;
-    private double toppingPrice;
-    public Topping(String topping, double price){
+    private int toppingNum;
+    public Topping(String topping, int price){
         toppingName = topping;
-        toppingPrice = price;
+        toppingNum = price;
     }
+public Topping(String topping){
+    toppingName = topping;
+    toppingNum = 1;
+}
+
 
     public String getToppingName() {
         return toppingName;
     }
 
-    public double getToppingPrice() {
-        return toppingPrice;
+    public double getToppingNum() {
+        return toppingNum;
     }
     public boolean equals(Object object)
     {

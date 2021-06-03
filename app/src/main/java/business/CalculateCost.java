@@ -15,7 +15,7 @@ public class CalculateCost {
     public static String cost(List<Topping> elements, String size) {
         final String[] PizzaSize = {"extraLarge", "Large", "Medium", "Small"};
         final double[] pizzaPrice = {10.0, 8.0, 6.0, 4.0};
-        final String[] ToppingList = {"T1", "T2", "T3", "T4"};
+        final String[] ToppingList = {"Topping1", "Topping2", "Topping3", "Topping4"};
         final double[] ToppingPrice = {10.0, 8.0, 6.0, 4.0};
         Topping element;
         double totalCost;
@@ -41,7 +41,7 @@ public class CalculateCost {
                 if(s.compareToIgnoreCase(size)==0){
                     found = true;
                     // System.out.println( pizzaPrice[count-1]);
-                    totalCost+=pizzaPrice[count-1];
+                    totalCost+=pizzaPrice[count-1]*1.13;
                     money = ""+totalCost;
                 }
             }
@@ -62,7 +62,7 @@ public class CalculateCost {
                     money="?";
                     break;
                 }else {
-                    toppingCost=element.getToppingPrice();
+                    toppingCost=element.getToppingNum();
                    // System.out.println(toppingCost);
                     if(toppingCost<=0){
                         missTopping++;
@@ -75,7 +75,7 @@ public class CalculateCost {
                             String find = topping.next();
                             if(element.getToppingName().compareToIgnoreCase(find)==0){
                                 //System.out.println(count);
-                                totalCost+=ToppingPrice[count-1];
+                                totalCost+=ToppingPrice[count-1]*1.13;
                                 validTopping++;
                                 found=true;
                                // System.out.println(ToppingPrice[count-1]);

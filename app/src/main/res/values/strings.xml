@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">tianqi</string>
+    <string name="sacue_button1">next</string>
+    <string name="sauce_BBQ">bbq</string>
 </resources>
