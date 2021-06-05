@@ -15,6 +15,9 @@ public class Customer {
         customerAddress = address;
         customerID = ID;
     }
+
+
+
     public String getCustomerID(){
         return customerID;
     }

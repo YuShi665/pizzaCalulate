@@ -17,7 +17,7 @@ public Topping(String topping){
         return toppingName;
     }
 
-    public double getToppingNum() {
+    public int getToppingNum() {
         return toppingNum;
     }
     public boolean equals(Object object)

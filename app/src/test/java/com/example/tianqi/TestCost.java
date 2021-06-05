@@ -28,6 +28,19 @@ public class TestCost{
 //            String size = "large";
 //          //  assertEquals("10", CalculateCost(toppings,size));
 //        }
+    @Test
+    public void test(){
+        Topping temp = new Topping("a",1);
+        Topping temp1 = new Topping("a",2);
+        Topping temp3 = new Topping("ab",22);
+        Topping temp2 = new Topping("a",1);
+        ArrayList<Topping> tt = new ArrayList<>();
+        tt.add(temp);
+        tt.add(temp1);
+        int a = tt.indexOf(temp2);
+        System.out.println(a);
+       //assert (temp.equals(temp1));
+    }
 
 
 }

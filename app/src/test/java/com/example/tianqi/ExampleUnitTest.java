@@ -36,18 +36,19 @@ public class ExampleUnitTest {
 //    }
 //    @Test
 //    public void test2(){
-//        Topping temp = new Topping("T1");
-//        Topping temp1 = new Topping("T2");
-//        Topping temp2 = new Topping("T3");
-//        Topping temp3 = new Topping("T4");
-//        Topping temp4 = new Topping("T");
+//        Topping temp = new Topping("topping1",2);
+//        //Topping temp1 = new Topping("T2");
+//        //Topping temp2 = new Topping("T3");
+//        //Topping temp3 = new Topping("T4");
+//        //Topping temp4 = new Topping("T");
 //        List<Topping> list = new ArrayList<>();
 //        list.add(temp);
-//        list.add(temp1);
-//        list.add(temp2);
-//        list.add(temp3);
-//        list.add(null);
-//        //System.out.println(CalculateCost.cost(list,"large"));
+//       // list.add(temp1);
+//        //list.add(temp2);
+//        //list.add(temp3);
+//       // list.add(null);
+//        System.out.println(CalculateCost.cost(list,"large"));
+//
 //    }
 //
 //    @Test
