@@ -4,16 +4,19 @@ public class Customer {
     private String customerID;
     private String customerName;
     private String customerAddress;
+    //private String password;
 
     public Customer(String ID){
         customerID = ID;
         customerAddress=null;
         customerName=null;
+       // password=null;
     }
     public Customer(String ID, String address, String name){
         customerName = name;
         customerAddress = address;
         customerID = ID;
+       // password=null;
     }
 
 
@@ -27,6 +30,11 @@ public class Customer {
     public String getCustomerAddress(){
         return customerAddress;
     }
+
+//    public void setPassword(String password) {
+//        this.password = password;
+//    }
+
     public String toString(){
         return "Customer: " + customerName+" Customer ID: "+ customerID+" Customer address: "+customerAddress;
     }
@@ -47,6 +55,7 @@ public class Customer {
         }
         return result;
     }
+
 
 
 }
